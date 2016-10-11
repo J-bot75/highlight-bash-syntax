@@ -13,7 +13,7 @@ var keywords = {}
 module.exports = function (src) {
   var msh = /^(#![^\n]+)\n/.exec(src)
   var sh = msh ? '<span class="shebang">' + msh[1] + '</span>\n' : ''
-  return sh + falafel(src.replace(/^#![^\n]+\n/,''), function (node) {
+  return sh + falafel(String(src).replace(/^#![^\n]+\n/,''), function (node) {
     var c = node.type.replace(/_/g,'-')
     var str = node.source()
     if (node.type === 'op') {
