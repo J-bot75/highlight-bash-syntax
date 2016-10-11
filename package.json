@@ -1,0 +1,28 @@
+{
+  "name": "highlight-bash-syntax",
+  "version": "1.0.0",
+  "description": "highlight bash syntax with html",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "falafel-bash": "^1.0.1"
+  },
+  "devDependencies": {
+    "tape": "^4.6.2"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "keywords": [
+    "highlight",
+    "syntax",
+    "bash",
+    "shell",
+    "sh"
+  ],
+  "author": "substack",
+  "license": "BSD"
+}
