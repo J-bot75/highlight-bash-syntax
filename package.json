@@ -1,6 +1,6 @@
 {
   "name": "highlight-bash-syntax",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "highlight bash syntax with html",
   "main": "index.js",
   "directories": {
