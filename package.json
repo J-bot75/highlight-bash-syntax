@@ -24,5 +24,13 @@
     "sh"
   ],
   "author": "substack",
-  "license": "BSD"
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/substack/highlight-bash-syntax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/substack/highlight-bash-syntax/issues"
+  },
+  "homepage": "https://github.com/substack/highlight-bash-syntax#readme"
 }
