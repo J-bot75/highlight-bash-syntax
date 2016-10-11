@@ -7,12 +7,12 @@ var src = `
 `.trim().replace(/^\s+/mg,'')
 
 var expected = `
-  #!/bin/bash
-  <span class="complete-command"><span class="simple-command"><span class="word">echo</span> <span class="word">hello</span> <span class="io-redirect"><span class="op">&gt;</span> <span class="word">cool.txt</span></span></span>
-  <span class="simple-command"><span class="word">echo</span> <span class="word">'ok &lt;3'</span></span></span>
+  |#!/bin/bash|
+  |||echo| |hello| ||&gt;| |cool.txt|||
+  ||echo| |'ok &lt;3'|||
 `.trim().replace(/^\s+/mg,'')
 
 test('sh', function (t) {
-  t.equal(highlight(src), expected)
+  t.equal(highlight(src).replace(/<span[^>]*>|<\/span>/g,'|'), expected)
   t.end()
 })
